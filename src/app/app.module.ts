@@ -15,7 +15,7 @@ import { DiceService } from './services/dice.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [DiceService],
+  providers: [ DiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
