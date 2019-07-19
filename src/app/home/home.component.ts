@@ -11,10 +11,9 @@ export class HomeComponent implements OnInit {
   public score: number;
   public comment: string;
 
-  constructor(private diceService: DiceService) { }
+  constructor(private diceService: DiceService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   public onclickThrow() {
     this.result = this.diceService.throwDice();
@@ -26,5 +25,7 @@ export class HomeComponent implements OnInit {
   public onclickClear() {
     this.diceService.clear();
     this.score = this.diceService.score;
+    this.comment = '';
+    this.result = null;
   }
 }
