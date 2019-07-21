@@ -15,6 +15,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {}
 
+  public addition(a: number, b: number): number {
+    const result = a + b;
+
+    return result;
+  }
+
   public onclickThrow() {
     this.result = this.diceService.throwDice();
     this.diceService.scoreAdd(this.result);

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WebDriverLogger } from 'blocking-proxy/built/lib/webdriver_logger';
 
 @Component({
   selector: 'app-unittest-me',
@@ -12,7 +13,6 @@ export class UnittestMeComponent implements OnInit {
 
   public addition(a: number, b: number): number {
     const result = a + b;
-
     return result;
   }
 }
